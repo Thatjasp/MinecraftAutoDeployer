@@ -1,0 +1,36 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #1e1e1e;
+  color: #eee;
+  text-align: center;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+select, button {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #5dd15f;
+}
+
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+}
