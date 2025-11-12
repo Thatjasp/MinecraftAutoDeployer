@@ -34,16 +34,15 @@ async function loadVersions() {
 
 async function startServer() {
   const version = document.getElementById("version").value;
+  const edition = document.getElementById("edition").value;
   const status = document.getElementById("status");
   status.textContent = "Starting server...";
-
   try {
     const response = await fetch("/start-minecraft", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ version })
     });
-
     if (response.ok) {
       const data = await response.json();
       status.textContent = `✅ Server started: ${data.message || "Success"}`;

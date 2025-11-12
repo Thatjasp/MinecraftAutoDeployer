@@ -49,6 +49,6 @@ def bedrockServer(version: str, name: str):
 
 if __name__ == "__main__":
     addArguments()
-    checkPort("localhost", 25565)
-    client.images.pull("itzg/minecraft-server:latest")
-    bedrockServer("latest", "minecraft1")
+    if checkPort("localhost", 25565):
+        client.images.pull("itzg/minecraft-server:latest")
+        bedrockServer("latest", "minecraft1")
