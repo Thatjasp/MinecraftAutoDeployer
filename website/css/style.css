@@ -6,16 +6,15 @@ body {
   padding: 50px;
 }
 
-h1 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+h1, h2 {
+  margin-bottom: 20px;
 }
 
 select, button {
   font-size: 1rem;
   padding: 10px;
   margin: 10px;
-  border-radius: 8px;
+  border-radius: 6px;
   border: none;
 }
 
@@ -23,7 +22,6 @@ button {
   background-color: #4CAF50;
   color: white;
   cursor: pointer;
-  transition: background-color 0.2s ease;
 }
 
 button:hover {
@@ -34,3 +32,17 @@ button:hover {
   margin-top: 20px;
   font-weight: bold;
 }
+
+#logOutput {
+  width: 80%;
+  height: 300px;
+  margin-top: 20px;
+  background: #111;
+  color: #0f0;
+  border: 1px solid #333;
+  padding: 10px;
+  font-family: monospace;
+  resize: none;
+  overflow-y: scroll;
+}
+

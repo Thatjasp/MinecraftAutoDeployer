@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
 	<h1>🚀 Minecraft Docker Launcher</h1>
 	<form id="mcForm">
 		<label for="edition">Select Minecraft Edition:</label><br>
@@ -24,9 +23,10 @@
 		<br>
 		<button type="button" id="startButton">Start Server</button>
 	</form>
-
 	<div id="status"></div>
 
+	<h2>Container Logs</h2>
+	<textarea id="logOutput" readonly></textarea>
 	<script src="./script/script.js"></script>
 </body>
 
